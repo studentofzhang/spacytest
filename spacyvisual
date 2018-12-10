@@ -1,0 +1,4 @@
+import spacy
+nlp =spacy.load('en_core_web_md')
+doc = nlp(u'this is a man')
+spacy.displacy.render(doc,style ='dep',options ={'distance'=90},jupyter =True)
